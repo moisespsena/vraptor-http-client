@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
+	<groupId>com.moisespsena.vraptor</groupId>
+	<artifactId>vraptor-http-client</artifactId>
+	<version>1.0</version>
+	<packaging>pom</packaging>
+	<name>VRaptor HTTP client</name>
+	<url>http://moisespsena.com</url>
+	<description>VRaptor HTTP Client é um plugin pra o Framework WEB VRaptor da Caelum (http://vraptor.caelum.com.br) que adiciona o recurso de Cliente HTTP para Resource Controllers usando OOP</description>
+        <organization>
+                <name>moisespsena</name>
+                <url>http://moisespsena.com</url>
+        </organization>
+        <developers>
+		<developer>
+			<id>moisespsena</id>
+			<name>Moises P. Sena</name>
+			<email>moisespsena@gmail.com</email>
+			<organization>moisespsena.com</organization>
+			<organizationUrl>http://www.moisespsena.com</organizationUrl>
+			<roles>
+				<role>developer</role>
+			</roles>
+			<timezone>-3</timezone>
+		 </developer>
+	</developers>
+	<licenses>
+		<license>
+			<distribution>repo</distribution>
+			<name>Apache License, Version 2.0</name>
+			<url>http://apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+        <properties>
+                <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        </properties>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.0-beta-9</version>
+			</plugin>
+		</plugins>
+	</build>
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<url>http://mvn-nexus:8081/nexus/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Internal Snapshots</name>
+			<url>http://mvn-nexus:8081/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+	<modules>
+		<module>vraptor-http-client-core</module>
+		<module>vraptor-http-client-sample-webapp</module>
+		<module>vraptor-http-client-mock</module>
+	</modules>
+	<scm>
+		<url>http://github.com/moisespsena/vraptor-http-client</url>
+		<connection>scm:git:git://github.com/moisespsena/vraptor-http-client</connection>
+		<developerConnection>scm:git:git@github.com:moisespsena/vraptor-http-client.git</developerConnection>
+	</scm>
+</project>
