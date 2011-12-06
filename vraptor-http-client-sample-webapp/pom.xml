@@ -4,11 +4,11 @@
 	<parent>
 		<groupId>com.moisespsena.vraptor</groupId>
 		<artifactId>vraptor-http-client</artifactId>
-		<version>1.0</version>
+		<version>1.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.moisespsena.vraptor</groupId>
 	<artifactId>vraptor-http-client-sample-webapp</artifactId>
-	<version>1.0</version>
+	<version>1.1-SNAPSHOT</version>
 	<name>VRaptor HTTP Cient Sample WebApp</name>
 	<description>Webapp exemplo de uso do plugin para conexões HTTP com aplicações web baseadas no VRaptor, onde a troca de dados é feita por Java Object Serialized</description>
 	<packaging>war</packaging>
